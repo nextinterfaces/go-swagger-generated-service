@@ -1,0 +1,26 @@
+swagger: "2.0"
+info:
+  description: "This is a sample Golang API."
+  version: "1.0.0"
+  title: "Sample API"
+host: "localhost:8080"
+basePath: "/api/v1"
+schemes:
+  - "http"
+
+paths:
+  /hello:
+    get:
+      summary: "Say Hello"
+      description: "Returns a greeting message."
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "object"
+            properties:
+              message:
+                type: "string"
+
